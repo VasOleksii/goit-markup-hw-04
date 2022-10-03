@@ -40,6 +40,7 @@ img{
     max-width: 100%;
     height: auto;
 }
+
 /* Body */
 
 body {
@@ -136,7 +137,7 @@ body {
     margin-left: auto;
 }
 
-.head-contacts .link{
+.contact-link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,10 +150,11 @@ body {
 
 .icon-contact{
     margin-right: 10px;
+    fill: currentColor;
 }
 
-.head-contacts .link:hover,
-.head-contacts .link:focus{
+.contact-link:hover,
+.contact-link:focus{
     color: var(--accent-color);
     fill: var(--accent-color);
 }
@@ -340,8 +342,6 @@ body {
     display: flex;
     gap: 10px;
     margin-top: 16px;
-    margin-right: 32px;
-    margin-left: 32px;
     align-items: center;
     justify-content: center;
     list-style: none;
@@ -385,30 +385,44 @@ body {
 .clients-list{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
     margin-left: calc(-1 * var(--set-gap));
     margin-top: calc(-1 * var(--set-gap));
-}
+    }
 
-.item-client {
+.client-item {
     flex-basis: calc(100% / 6 - var(--set-gap));
     margin-left: var(--set-gap);
     margin-top: var(--set-gap);
     text-align: center;
 }
 
-.icon-client{
-    display: block;
+.client-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    color: var(--decoration-color);
     border: 1px solid var(--decoration-color);
-    border-radius: 4px;
-    fill:var(--decoration-color);
+    border-radius: 4px; 
+}
+
+.client-icon{
+    fill:currentColor;
+    
+}
+
+.client-link:hover,
+.client-link:focus{
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 
-.icon-client:hover,
-.icon-client:focus{
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-}
+
 
 /*Footer*/
 
@@ -580,6 +594,7 @@ body {
 
 .project-link{
     display: block;
+    text-decoration: none;
 }
 
 .project-link:hover, 
